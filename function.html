@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Tutorail</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+            // first type of function
+        // function getMilk(){
+        //    
+            // return 2+1 ;
+        // }
+        // function calCulate(mul){
+            // let sub = getMilk()*mul;
+            // console.log(sub);
+        // }
+    //  calCulate(6);
+        // console.log(chob);
+
+
+        // second Type of function
+
+            // function getMilk(money,perBottlerCost){
+                // let canBuy = money/perBottlerCost;
+                    // canBuy = Math.floor(canBuy);
+                // return canBuy;
+                // alert("You Can Buy " + canBuy + " Bottles");
+            // }
+            // getMilk(10,1.5);
+
+            // function lifeInWeeks(age) { }
+    
+  
+     
+        //Write your code here.
+        //    let currentAge = prompt("What's Your Age");
+            // let mainAge = age - currentAge ;
+        // let lifeInMonth = mainAge*12;
+        // let lifeInWeekss = mainAge*52;
+        // let lifeInDay = mainAge*365;
+        // 
+        // console.log("You have " +lifeInDay+", "+lifeInWeekss+ ", "+lifeInMonth);
+        // 
+        // 
+        // alert("You have " +lifeInDay+" Days, "+lifeInWeekss+ " Weeks, "+lifeInMonth+" Months");
+//    
+    // }
+        //  lifeInWeeks(90);
+    // third type of funtion practice 
+   function getMilk(money,costPerBottle){
+          
+            // making Specific Function for this logic
+            let buyBottles = calcBottles(money,costPerBottle);
+                buyBottles = Math.floor(buyBottles);
+          alert("I Can Buy "+ buyBottles + " Bottles"); 
+      
+            return remainMoney(money,costPerBottle);
+        }
+   
+       
+     
+        function calcBottles(startingMoney,costPerBottle){
+            let buyBottle = startingMoney / costPerBottle;
+            return buyBottle;
+        }
+
+        function remainMoney(allMoney,costPerBottle){
+            let moneyIs = allMoney % costPerBottle;
+            return moneyIs;
+        }
+        
+        let remain = getMilk(5,1.5);
+
+        alert("i Will have " +remain+" Coin");
+
+
+
+
+
+
+    // whernever i write return in a function i have to declear funtion after {curlee} bracket creating variebles without variebles does not work 
+
+            // function peopleName(first,second){
+                // console.log("haha")
+                // return first + " "+second;
+            // }
+            // let man = peopleName("Rajib","Debnath");
+            // alert(man);
+            //Create your function below this line.
+
+            // BMI practice Challange 
+                function bmiCalculator(weight,height){
+                    let bmi = weight/Math.pow(height,2);
+                    return bmi;
+                }
+                let bmiCalc =Math.round( bmiCalculator(56,1.8));
+                alert(bmiCalc);
+
+    </script>
+</body>
+</html>

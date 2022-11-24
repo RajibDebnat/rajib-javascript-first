@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Animation</title>
+    
+</head>
+<style>
+    .btn{
+        background-color: rgb(0, 110, 255);
+        border-radius: 10px;
+        padding: 2%;
+      
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+
+    }
+    .pressed{
+        background-color: rgb(255, 0, 34);
+        box-shadow: 5px 4px 7px black;
+        /* opacity: ; */
+    }
+</style>
+<body>
+    <button class="btn">Submit</button>
+    <script>
+        let btn =  document.querySelector('.btn');
+        
+        document.querySelector('.btn').addEventListener('click',function(){
+
+       this.style.backgroundColor ="red"
+       this.style.boxShadow ="5px 4px 7px black";
+     setTimeout(function(){
+        btn.style.backgroundColor ="blue"
+       btn.style.boxShadow ="0px 0px 0px white";
+     },1000)
+        })
+    </script>
+</body>
+</html>

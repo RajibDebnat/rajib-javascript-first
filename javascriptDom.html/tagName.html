@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript Dom TAG Tutorial</title>
+</head>
+<style>
+    .huge{
+        font-size:10rem;
+    }
+</style>
+<body>
+    <input type="checkbox"  class="lehenga">
+    <h2 class="firstHeading">Hello World</h2>
+    <button onclick='lonka()'> Submit</button>
+    <button onclick="lonka2()">Cancle</button>;
+    <a href="https://www.google.com/">hoza</a>
+    <ul id="list">
+        <li class="item">
+            Hello
+        </li>
+        <li class="item" id="rakhal">
+            Hello
+        </li>
+        <li class="item">
+            Hello
+        </li>
+        <li class="item">
+            <a href="https://www.google.com/">Gpp</a>
+        </li>
+        <li class="item" id="demo">
+            Hello
+        </li>
+        
+    </ul>
+    <h1 id="heading">Heading</h1>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error eius, velit earum ex quas facilis alias mollitia dolorum rem deserunt ullam, fuga, eos blanditiis recusandae excepturi voluptates. Provident facere facilis, ad accusantium obcaecati ea! Deleniti dolores distinctio nesciunt veniam sint quod pariatur debitis dolorum voluptatibus, fugiat non iure ea quia!</p>
+    <script>
+        
+        function lonka(){
+            document.querySelector('.lehenga').checked=true;
+        }
+        function lonka2(){
+            document.querySelector('.lehenga').checked=false;
+        }
+        //   boomBoom();
+        // when we use document.getElementsByTagName("li") that's give us a array then if would we want to change the property of li then it will give us array and have to kepp in mind that we can't change a array color or prperty using getElementsByTagName ok .. For that you have to use sintex which li you want to target ... in Example below i gave to li[0] means i targeted first child of li ok (Clear)
+
+
+        document.getElementsByTagName("li")[0].innerHTML="Rajib";  
+        document.getElementsByTagName("li").length;  
+        // javascript has another one like tagsName .thats also Give us array for this reason we have to use number syntex for targeting which element i want to target after selecting item   === example given below:->
+            document.getElementsByClassName("item")[0].style.color="orange";
+
+            // but getElementByid is quite different from them 
+            document.getElementById("demo").innerHTML="Jitpur High School";
+
+            // but using quiry Selecter we can target element like how we target using css ....css targeting and quiry targeting are same way 
+            // document.querySelector('li a').innerHTML="Google";
+            // here i can't changing rakhal font color; 
+        document.querySelector('#rakhal').style.color="red";
+        document.querySelector("li:nth-child(2)");
+        // using nth child(3) we can target second element of html Element like if i will have 5 li then how can i target third number li using same class no it's not possible using nth-child we able to target any element;
+        document.querySelector("li:nth-child(2)");
+
+
+        // if would two element 1bellow another then when we will target them then we cannot create sapce between them such as if a below li(.item)..
+        // document.querySelectorAll(".item").style.color= "red";
+        // in same element we can't use querySelector and QuerySelectorall then 1 working and another will not working
+      /*   document.querySelector(".heading").sytle.fontSize="3rem"; */
+      let a =  document.querySelector("p").style.color="red";
+
+
+      document.querySelector(".firstHeading").style.fontSize="10rem";
+'10rem'
+document.querySelector(".firstHeading").style.visibility="hidden";
+'hidden'
+document.querySelector(".firstHeading").style.display="none";
+document.querySelector("button").style.backgroundColor="yellow";
+
+// document.querySelector("button").style.border="none";
+        // p[3]
+
+
+       
+       
+        // using classList.add i can add class in existing element which have already a class 
+
+        // i using classList.add i can add class in html property
+        document.querySelector("button").classList.add("btn");
+        // as well as i can remove class using (remove) 
+        document.querySelector("button").classList.remove("btn");
+
+        // and toggle is all in one in himself 
+        // using toggle it's can if class has added then remove if class has not added then add 
+        document.querySelector("button").classList.toggle("Hirappa");
+        document.querySelector("p").classList.toggle("huge");
+
+
+
+            // how can i get only text from any html element 
+            // innerHTML give us innerHtml of which property we select but here textContent can select only text from html property
+            document.querySelector("H1").textContent;
+
+
+
+
+    </script>
+</body>
+</html>

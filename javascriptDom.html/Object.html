@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Tutorial</title>
+</head>
+<body>
+    <script>
+
+        // Normal object
+
+        // let housekeaper={
+            // Name:"Rajib",
+            // age:19,
+            // Passion:["coding","FreeLancing"],
+            // Work_Experience:5,
+            // functiona:function(){
+            // console.log(this.functiona)
+            // }
+        // };
+
+
+        // instead of writing whole bunch of code we can only create a constructer function and write the properies
+// using constructive Function making object
+
+                function HouseKeeper(name,age,language,nationality,Work_Experience){
+
+                    this.name=name;
+                    this.age=age;
+                    this.language=language;
+                    this.nationality=nationality;
+                    this.Work_Experience=Work_Experience;
+                    this.Working = function(){
+                        alert("Cleaning in Progress");
+                    }
+                }
+                    // let housekeeper1 = new HouseKeeper("Rajib",19,["English","Hindi","Bengali"],"Indian","2 Years as a FullStack Webdeveloper");
+                    // console.log(housekeeper1);
+
+              let  housekeeper2 = new HouseKeeper("Riju",24,["English","Hindi","Bengali"],"indian","2Years")
+                console.log(housekeeper2.Working())
+                
+                switch (50) {
+                    case 12:
+                        console.log("hello");
+                        break;
+                    case 15:
+                        console.log("Hi");
+                        break;
+                    case 50:
+                        console.log("By By");
+                        break;
+                
+                    default: console.log("GEt out from my Life");
+                        break;
+                }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Tutorial</title>
+</head>
+<body>
+    <script >
+        // love CalCulator challange 
+
+        
+        let loveName = prompt("What's Your Love Name");
+        let lovePercent = prompt("How Much you Love your Love. Choose Between 1 to 100");
+        
+        function loveCalculator(){
+            let randomNumber = Math.random()*100 + 1;
+                randomNumber = Math.floor(randomNumber);
+        
+                if (randomNumber >= 50){
+                    alert("Your Love Is Extra Ordinary Ture Love 🥰😘 "+ randomNumber+" % Love");
+                }
+                
+                else if(randomNumber<=49 && randomNumber >=20){
+                    
+                    alert("Your Love Is Ture Love 🙂😚☺ "+ randomNumber+" % Love");
+                }
+                else{
+                    alert("Your Love Is Not a Ture Love 😫😌😥 "+ randomNumber+" % Love");
+
+                };
+
+        }
+        loveCalculator();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year Challange Tutorial</title>
+</head>
+<body>
+    <script>
+
+        // function  leepYear(year){
+// 
+            // if(year % 4 ===0){
+                // alert("it is a Leep Year1");
+                // if(year%100===0){
+                    // alert("it's not a leep Year2");
+                // }
+                // else{
+                    // alert("it's not a leep year3")
+                // }
+            // }
+// 
+            // else if(year%400===0){
+                // alert("it is a Leep Year");
+            // }
+// 
+// 
+// 
+            // else{
+                // alert("it's Not a Leep year");
+            // }
+        // }
+        // leepYear(210)
+
+        let enterYear = prompt('Enter WonderFul Year');
+        function leepYear(year){
+            if(enterYear % 4===0){
+                if(enterYear % 100===0){
+                   if(enterYear % 400 ===0){
+                    alert("It is a Leep Year");
+                   }
+                   else{
+                    alert("It's not a Leep Year");
+                   }
+                }
+                else{
+                    alert("It's a Leep Year");
+                }
+            }
+            else if(enterYear<=3){
+             alert( "Write With Patience Bro");
+            }
+            else{
+                alert("It's not a Leep Year");
+            }
+        }
+        leepYear(enterYear);
+
+    </script>
+</body>
+</html>

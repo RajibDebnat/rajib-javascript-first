@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slice Tutorial</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let name = 'Rajib';
+       
+        console.log(name.slice(5,3));
+
+        // practice
+        // let names = prompt("What's your Name ");
+        // names
+        // let tweetCount = names.slice(0,142);
+        // alert(tweetCount);
+        // practctice 
+        let askName = prompt("What's Your Name");
+        let firstWord = askName.slice(0,1).toUpperCase();
+        let lowCase = askName.slice(1,askName.length).toLowerCase();
+        let comBine = firstWord+lowCase;
+        alert ("Hello, " + comBine);
+
+    </script>
+</body>
+</html>
